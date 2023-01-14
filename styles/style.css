@@ -89,6 +89,35 @@ nav ul li{
             gap: 70px;
         }
 
+        .left-section1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 20px;
+        }
+        .left-section1 img{
+            height: 300px;
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.358);
+        }
+
+        .right-section1-heading{
+            font-size:3.2vw;
+            line-height: 1.5;
+        }
+        .right-section1-heading-style{
+            color: rgba(0, 0, 0, 0.422);
+        }
+        .right-section1-heading-style1{
+            font-weight: bolder;
+            color: var(--thirdColor);
+        }
+        .right-section1-description{
+            margin-top: 
+            15px;
+            line-height: 1.5;
+        }
+
 
 /*--------------------------------------
         RESPONSIVE DESIGN
@@ -117,6 +146,14 @@ nav ul li{
     }
     /* Header Setion End */
 
+    /* Section 01 */
+    .container{
+        padding: 30px 30px;
+    }
+    .left-section1 img{
+        height: 100%;
+        width: 100%;
+    }
 
 
 }
@@ -156,5 +193,26 @@ nav ul li{
     }
     /* Header Setion End */
 
-    
+     /* Section 01 */
+     .container{
+        padding: 30px 30px;
+    }
+    .left-section1 img{
+        /* height: 100%; */
+        width: 100%;
+    }
+    .section-1{
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+    .left-section1{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .section-1-btn,  .right-section1-heading{
+        text-align: center;
+    }
+    .right-section1-heading{
+        font-size:6.2vw;
+    }
+
 }
