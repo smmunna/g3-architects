@@ -1,0 +1,160 @@
+/* Importing font styles from another sites */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+/* Definin basic styles */
+:root{
+    --primaryColor:black;
+    --secondaryColor:white;
+    --thirdColor:#FF900E;
+    --forthColor:red;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header Setion Start */
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+    padding: 30px 150px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+nav ul li{
+    font-size: 1.2vw;
+    list-style-type: none;
+}
+
+.nav-heading{
+    font-size: 3vw;
+    font-weight: bold;
+}
+
+/* Header Main 2nd Part After Navigation */
+.header-main{
+    text-align: center;
+}
+.heaer-and-description{
+    padding: 110px 200px 50px 200px;
+}
+.header-main-heading{
+    font-size: 5.2vw;
+    font-weight: bold;
+}
+.header-main-description{
+    margin-top: 20px;
+    font-size: 1.2vw;
+    line-height: 1.5;
+}
+
+.header-main-button button{
+    margin-top: 25px;
+    padding: 12px;
+    border: hidden;
+    background-color: var(--thirdColor);
+    border-radius: 5px;
+    font-weight: bolder;
+    color: var(--secondaryColor);
+}
+
+.header-main-image img{
+    width: 100%;
+}
+/* Header Setion End */
+
+    /* -------------------
+            MAIN SECTION
+        ------------------- */
+
+        .container{
+            padding: 80px 200px;
+        }
+
+        /* work with section-1 */
+        .section-1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 70px;
+        }
+
+
+/*--------------------------------------
+        RESPONSIVE DESIGN
+---------------------------------------*/
+
+/* For Tablet or Landscape devices */
+@media only screen and (min-width:577px) and (max-width:992px) {
+   /* Header Setion Start */
+    header{
+        padding: 20px 20px;
+    }
+    .nav-heading{
+        font-size: 4vw;
+      }
+    nav{
+        justify-content: space-around;
+    }
+    nav ul li{
+        font-size: 2.2vw;
+    }
+    .heaer-and-description{
+        padding: 50px 60px 20px 60px;
+    }
+    .header-main-description{
+        font-size: 2vw;
+    }
+    /* Header Setion End */
+
+
+
+}
+
+/* For small, medium and Large Mobile devices */
+@media only screen and (max-width:576px) {
+    
+    /* Header Setion Start */
+    header{
+        padding: 30px 10px;
+    }
+    .nav-heading{
+        font-size: 6vw;
+      }
+    nav{
+        flex-direction: column;
+        
+    }
+    nav ul{
+       padding-right: 10%;
+    }
+    nav ul li{
+        font-size: 4.2vw;
+    }
+    .heaer-and-description{
+        padding: 20px 20px 20px 20px;
+    }
+    .header-main-description{
+        font-size: 3vw;
+    }
+    .header-main-heading{
+        color: var(--forthColor);
+        line-height: 1.6;
+    }
+    .header-main-image img{
+        width: 75%;
+    }
+    /* Header Setion End */
+
+    
+}
