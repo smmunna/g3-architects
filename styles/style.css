@@ -234,15 +234,16 @@ nav ul li{
 }
 
 .awards-cards{
-    padding: 20px;
+    padding: 14px;
     border: 2px solid var(--thirdColor);
     border-radius: 8px;
-    transition-property: font-size, awards-cards;
+    transition-property: all;
 }
 
 .awards-cards:hover .award-number{
     color: var(--primaryColor);
     font-size: 4.5vw;
+    color: var(--secondaryColor);
     transition-duration: 2s;
     transition-delay: 0.1s;
 }
@@ -250,6 +251,7 @@ nav ul li{
 .awards-cards:hover{
     background-color: var(--thirdColor);
     transition-duration: 2s;
+    transform: scale(1.1);
 }
         /* Section 03 Start */
 
@@ -303,10 +305,14 @@ nav ul li{
 
     /* Section 03 Start */
 
+    .section3-2{
+        gap: 20px;
+    }
 
     .section3-description{
         font-size: 1.5vw;
     }
+    
 
     /* Section 04 End */
 
@@ -417,11 +423,16 @@ nav ul li{
         }
 
         .section3-description{
-            font-size: 2.2vw;
+            font-size: 3.2vw;
+        }
+        .break::after{
+            white-space: nowrap;
         }
         .section3-2{
             padding: 30px 0px;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(1,1fr);
+            text-align: center;
+            gap: 20px;
         }
 
         .award-number{
