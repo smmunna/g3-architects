@@ -193,6 +193,69 @@ nav ul li{
         }
 
         /* Section 02 End */
+.section3-1{
+    padding-top: 30px;
+}
+.section3-1heading{
+    font-size: 3vw;
+    font-weight: bold;
+}
+.section3-description{
+    font-size: 1.2vw;
+    line-height: 1.5;
+    margin-top: 40px;
+    color: var(--lightGrey);
+}
+
+.break::after{
+    content: '\A';
+    white-space: pre;
+}
+
+.section3-2{
+    padding: 60px 0px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-around;
+    align-items: center;
+    gap: 80px;
+
+}
+
+
+.award-number{
+    margin-top: 20px;
+    font-size: 3vw;
+    font-weight: bold;
+}
+.award-heading{
+    margin-top: 12px;
+    color: var(--lightGrey);
+}
+
+.awards-cards{
+    padding: 20px;
+    border: 2px solid var(--thirdColor);
+    border-radius: 8px;
+    transition-property: font-size, awards-cards;
+}
+
+.awards-cards:hover .award-number{
+    color: var(--primaryColor);
+    font-size: 4.5vw;
+    transition-duration: 2s;
+    transition-delay: 0.1s;
+}
+
+.awards-cards:hover{
+    background-color: var(--thirdColor);
+    transition-duration: 2s;
+}
+        /* Section 03 Start */
+
+         
+
+        /* Section 03 End */
 
 /*--------------------------------------
         RESPONSIVE DESIGN
@@ -238,6 +301,14 @@ nav ul li{
     }
     /* Section 02 End */
 
+    /* Section 03 Start */
+
+
+    .section3-description{
+        font-size: 1.5vw;
+    }
+
+    /* Section 04 End */
 
 }
 
@@ -337,5 +408,24 @@ nav ul li{
         /* Section 02 End */
 
 
+        /* Section 03 start */
+        .section3-1{
+            padding-top: 0px;
+        }
+        .section3-1heading {
+            font-size: 5vw;
+        }
 
-}
+        .section3-description{
+            font-size: 2.2vw;
+        }
+        .section3-2{
+            padding: 30px 0px;
+            grid-template-columns: repeat(2,1fr);
+        }
+
+        .award-number{
+            font-size: 5vw;
+        }
+
+    }
