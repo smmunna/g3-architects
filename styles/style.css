@@ -7,6 +7,7 @@
     --secondaryColor:white;
     --thirdColor:#FF900E;
     --forthColor:red;
+    --lightGrey:#727272;
 }
 
 body{
@@ -78,7 +79,7 @@ nav ul li{
         ------------------- */
 
         .container{
-            padding: 80px 200px;
+            padding: 80px 150px;
         }
 
         /* work with section-1 */
@@ -118,6 +119,80 @@ nav ul li{
             line-height: 1.5;
         }
 
+        /* Section 02 Start */
+
+        .section-2{
+            padding: 60px 0px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 54px;
+        }
+
+        .section2-left1-heading{
+            font-size: 2vw;
+            font-weight: bolder;
+            border-left: 5px solid var(--thirdColor);
+            padding: 10px;
+        }
+
+        .section2-left1-description{
+            font-size: 1vw;
+            margin-top: 24px;
+            line-height: 1.5;
+            color: var(--lightGrey);
+        }
+
+        /* Card Design */
+
+        .section2-left2{
+            margin-top: 4px;
+        }
+        .section2-left2-card{
+            margin-top: 20px;
+            padding: 12px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.098);
+        }
+        .section2-left2-card-heading{
+            font-size: 1.2vw;
+            font-weight: bolder;
+        }
+        .section2-left2-card-description{
+            margin-top: 14px;
+            font-size: 1vw;
+            line-height: 1.5;
+            color: var(--lightGrey);
+            ;
+        }
+
+        .section2-right1{
+            position: relative;
+        }
+
+        .section2-right-image img{
+            width: 600px;
+        }
+        .section2-right-btn {
+            position: absolute;
+            margin: -15% 0% 0% -5%;
+        }
+        .section2-right-btn button{
+            border: hidden;
+            border-radius: 5px;
+            padding: 24px;
+            background-color: var(--thirdColor);
+        }
+        .ten-year{
+            font-size: 4vw;
+            font-weight: bolder;
+            color: var(--secondaryColor);
+        }
+        .experience{
+            font-size: 1.5vw;
+            color: var(--secondaryColor);
+        }
+
+        /* Section 02 End */
 
 /*--------------------------------------
         RESPONSIVE DESIGN
@@ -154,6 +229,14 @@ nav ul li{
         height: 100%;
         width: 100%;
     }
+
+
+    /* Section 02 Start */
+
+    .section2-right-image img{
+        width: 100%;
+    }
+    /* Section 02 End */
 
 
 }
@@ -214,5 +297,45 @@ nav ul li{
     .right-section1-heading{
         font-size:6.2vw;
     }
+
+        /* Section 02 Start */
+
+        .section2-right-image img{
+            width: 100%;
+        }
+
+        .section-2{
+            flex-direction: column;
+        }
+
+        .section2-left1-heading{
+            font-size: 5vw;
+        }
+
+        .section2-left1-description{
+            font-size: 3vw;
+        }
+        .section2-left2-card-heading{
+            font-size: 3vw;
+        }
+
+        .section2-left2-card-description{
+            font-size: 2.5vw;
+        }
+
+        .section2-right-btn {
+            position: static;
+            margin-left: 25%;
+        }
+
+        .ten-year{
+            font-size: 7vw;
+        }
+        .experience{
+            font-size: 2.5vw;
+        }
+        /* Section 02 End */
+
+
 
 }
